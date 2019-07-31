@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.item_activity.start_mode.SingleTopActivity">
+
+    <Button
+        android:id="@+id/btn_singleTop"
+        android:text="singleTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_aplus_singleTop"
+        android:text="跳转到另外一个活动，然后按返回键，观察logcat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

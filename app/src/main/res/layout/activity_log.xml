@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.item_activity.LogActivity">
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/log_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log.v()"/>
+        <Button
+            android:id="@+id/log_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log.d()"/>
+        <Button
+            android:id="@+id/log_i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log.i()"/>
+        <Button
+            android:id="@+id/log_w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log.w()"/>
+        <Button
+            android:id="@+id/log_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log.e()"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注意：可以使用logcat自定义的过滤器进行日志的过滤，即可以使用Log的第一个参数TAG进行日志的过滤"/>
+
+
+</RelativeLayout>

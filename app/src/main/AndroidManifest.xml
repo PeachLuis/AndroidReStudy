@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.luis.androidrestudy">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.item_activity.LogActivity" />
+        <activity android:name=".activity.item_activity.MenuActivity" />
+        <activity android:name=".activity.item_activity.intent.IntentActivity" />
+        <activity android:name=".activity.item_activity.intent.IntentActivity_Implicit">
+            <intent-filter>
+                <action android:name="com.example.luis.androidrestudy.acticity.item_activity.ACTION_INTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.item_activity.intent.IntentActivity_Explicit" />
+        <activity android:name=".activity.item_activity.life.LifeActivity" />
+        <activity android:name=".activity.item_activity.life.NormalActivity" />
+        <activity
+            android:name=".activity.item_activity.life.DialogActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".activity.item_activity.start_mode.StartModeActivity" />
+        <activity android:name=".activity.item_activity.start_mode.StandardActivity" />
+        <activity
+            android:name=".activity.item_activity.start_mode.SingleTopActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.item_activity.start_mode.SingleTaskActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.item_activity.start_mode.singleInstance.SingleInstanceActivity" />
+        <activity android:name=".activity.item_activity.start_mode.StartModeActivity_Base" />
+        <activity
+            android:name=".activity.item_activity.start_mode.singleInstance.Activity_1"
+            android:launchMode="singleInstance" />
+        <activity android:name=".activity.item_activity.start_mode.singleInstance.Activity_2" />
+        <activity android:name=".activity.item_activity.TwoDialogActivity" />
+        <activity android:name=".activity.item_activity.custom_layout.CustomLayout" />
+        <activity android:name=".activity.item_activity.list_view.BaseListView" />
+        <activity android:name=".activity.item_activity.recycler_view.BaseRecyclerView"></activity>
+    </application>
+
+</manifest>
