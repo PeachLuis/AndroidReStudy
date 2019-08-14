@@ -27,8 +27,9 @@ public class MainActivity extends LuisApplication {
 
     private ListView mListView;
 
-    private List<String> mDatas = new ArrayList<>();
+    private static List<String> mDatas = new ArrayList<>();
 
+    public static int COUNT = 9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,11 @@ public class MainActivity extends LuisApplication {
         initData();
         initView();
     }
+
+    public static void addData(String string) {
+        mDatas.set(COUNT, string);
+    }
+
 
     private void initData() {
         //为ListView添加数据
