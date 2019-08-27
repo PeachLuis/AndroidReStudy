@@ -49,7 +49,10 @@
         <activity android:name=".activity.item_activity.TwoDialogActivity" />
         <activity android:name=".activity.item_activity.custom_layout.CustomLayout" />
         <activity android:name=".activity.item_activity.list_view.BaseListView" />
-        <activity android:name=".activity.item_activity.recycler_view.BaseRecyclerView"></activity>
+        <activity android:name=".activity.item_activity.recycler_view.BaseRecyclerView" />
+        <activity android:name=".activity.item_activity.chat_activity.ChatActivity" />
+        <activity android:name=".activity.item_activity.fragement.FragmentTestActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"></activity>
     </application>
 
 </manifest>

@@ -8,15 +8,17 @@ import android.widget.Toast;
 import com.example.luis.androidrestudy.R;
 import com.example.luis.androidrestudy.LuisApplication;
 import com.example.luis.androidrestudy.activity.MainActivity;
+import com.example.luis.androidrestudy.utils.LogUtil;
 
 public class MenuActivity extends LuisApplication {
+
+    private static final String TAG = "MenuActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        MainActivity.addData("我是新的一条数据");
     }
 
     @Override

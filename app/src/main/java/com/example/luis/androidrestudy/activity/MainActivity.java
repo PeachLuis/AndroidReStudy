@@ -11,7 +11,9 @@ import android.widget.Toast;
 import com.example.luis.androidrestudy.LuisApplication;
 import com.example.luis.androidrestudy.R;
 import com.example.luis.androidrestudy.activity.item_activity.TwoDialogActivity;
+import com.example.luis.androidrestudy.activity.item_activity.chat_activity.ChatActivity;
 import com.example.luis.androidrestudy.activity.item_activity.custom_layout.CustomLayout;
+import com.example.luis.androidrestudy.activity.item_activity.fragement.FragmentTestActivity;
 import com.example.luis.androidrestudy.activity.item_activity.intent.IntentActivity;
 import com.example.luis.androidrestudy.activity.item_activity.LogActivity;
 import com.example.luis.androidrestudy.activity.item_activity.MenuActivity;
@@ -19,17 +21,18 @@ import com.example.luis.androidrestudy.activity.item_activity.life.LifeActivity;
 import com.example.luis.androidrestudy.activity.item_activity.list_view.BaseListView;
 import com.example.luis.androidrestudy.activity.item_activity.recycler_view.BaseRecyclerView;
 import com.example.luis.androidrestudy.activity.item_activity.start_mode.StartModeActivity;
+import com.example.luis.androidrestudy.utils.LogUtil;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends LuisApplication {
 
+    private static final String TAG = "MainActivity";
+
     private ListView mListView;
 
-    private static List<String> mDatas = new ArrayList<>();
-
-    public static int COUNT = 9;
+    private List<String> mDatas = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,23 +43,20 @@ public class MainActivity extends LuisApplication {
         initView();
     }
 
-    public static void addData(String string) {
-        mDatas.set(COUNT, string);
-    }
-
-
     private void initData() {
         //为ListView添加数据
-        mDatas.add("Log的使用");
-        mDatas.add("Menu的使用");
-        mDatas.add("Intent的使用");
-        mDatas.add("活动的生命周期");
-        mDatas.add("活动的四大启动模式");
-        mDatas.add("活动的最佳实践");
-        mDatas.add("两种Dialog的基本使用");
-        mDatas.add("创建自定义控件");
-        mDatas.add("ListView的使用");
-        mDatas.add("RecyclerView的的使用");
+        mDatas.add(0,"Log的使用");
+        mDatas.add(1,"Menu的使用");
+        mDatas.add(2,"Intent的使用");
+        mDatas.add(3,"活动的生命周期");
+        mDatas.add(4,"活动的四大启动模式");
+        mDatas.add(5,"活动的最佳实践");
+        mDatas.add(6,"两种Dialog的基本使用");
+        mDatas.add(7,"创建自定义控件");
+        mDatas.add(8,"ListView的使用");
+        mDatas.add(9,"RecyclerView的的使用");
+        mDatas.add(10, "聊天的简单实现");
+        mDatas.add(11, "横竖屏切换时显示不同的Fragment");
     }
 
     private void initView() {
@@ -98,6 +98,12 @@ public class MainActivity extends LuisApplication {
                         break;
                     case 9:
                         startActivity(new Intent(MainActivity.this, BaseRecyclerView.class));
+                        break;
+                    case 10:
+                        startActivity(new Intent(MainActivity.this, ChatActivity.class));
+                        break;
+                    case 11:
+                        startActivity(new Intent(MainActivity.this, FragmentTestActivity.class));
                         break;
                     default:
                         break;

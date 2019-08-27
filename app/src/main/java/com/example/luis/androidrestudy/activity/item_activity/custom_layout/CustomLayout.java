@@ -4,9 +4,10 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.example.luis.androidrestudy.LuisApplication;
 import com.example.luis.androidrestudy.R;
 
-public class CustomLayout extends AppCompatActivity {
+public class CustomLayout extends LuisApplication {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

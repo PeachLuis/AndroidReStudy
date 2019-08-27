@@ -32,7 +32,7 @@ public class BaseRecyclerView extends LuisApplication {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //因为是TabLayout，所以这里需要将actionBar隐藏
+        //因为是TabLayout，所以这里需要将actionBar隐藏，这样比较好看
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             getSupportActionBar().hide();

@@ -38,7 +38,7 @@ public class TwoDialogActivity extends LuisApplication implements View.OnClickLi
             case R.id.btn_alertDialog:
                 AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
                 alertDialog.setTitle("这是标题");
-                alertDialog.setMessage("balabalabal");
+                alertDialog.setMessage("balabalabala");
                 alertDialog.setCancelable(true);
                 alertDialog.setNegativeButton("取消", new DialogInterface.OnClickListener() {
                     @Override
